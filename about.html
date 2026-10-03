@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="light overflow-x-hidden">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Sartoria Knowledge Network</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        charcoal: '#0F172A',
+                        terracotta: '#059669',
+                        ivory: '#F8FAFC',
+                        stone: '#CBD5E1',
+                        graphite: '#334155'
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23059669' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><circle cx='6' cy='6' r='3'></circle><circle cx='6' cy='18' r='3'></circle><line x1='20' y1='4' x2='8.12' y2='15.88'></line><line x1='14.47' y1='14.48' x2='20' y2='20'></line><line x1='8.12' y1='8.12' x2='12' y2='12'></line></svg>">
+</head>
+<body class="pt-20 bg-ivory dark:bg-charcoal text-charcoal dark:text-ivory antialiased overflow-x-hidden">
+    <!-- Header (Same as Index) -->
+    <header class="fixed top-0 w-full z-50 bg-ivory/80 dark:bg-charcoal/80 backdrop-blur-lg border-b border-stone-300 dark:border-graphite">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <i data-lucide="scissors" class="w-6 h-6 text-terracotta"></i>
+                <span class="font-serif text-2xl font-bold tracking-tight">Sartoria</span>
+            </div>
+            
+            <nav class="hidden lg:flex items-center gap-8 text-sm font-medium uppercase tracking-widest">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="resources.html" class="nav-link">Resources</a>
+                <a href="community.html" class="nav-link">Community & Learning</a>
+            </nav>
+
+            <div class="flex items-center gap-2 lg:gap-4">
+                <a href="contact.html" class="hidden lg:inline-flex px-5 py-2.5 bg-charcoal text-ivory dark:bg-ivory dark:text-charcoal text-xs tracking-wider uppercase hover:bg-terracotta dark:hover:bg-terracotta transition-colors">Contact Us</a>
+                <button id="theme-toggle" class="p-2 hover:text-terracotta transition-colors"><i data-lucide="moon" class="w-5 h-5"></i></button>
+                <button id="mobile-menu-btn" class="lg:hidden p-2"><i data-lucide="menu" class="w-6 h-6"></i></button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden absolute w-full bg-ivory dark:bg-charcoal border-b border-stone-300 dark:border-graphite px-6 py-4">
+            <nav class="flex flex-col gap-4 text-sm font-medium uppercase tracking-widest">
+                <a href="index.html" class="hover:text-terracotta">Home</a>
+                <a href="about.html" class="hover:text-terracotta">About</a>
+                <a href="services.html" class="hover:text-terracotta">Services</a>
+                <a href="resources.html" class="hover:text-terracotta">Resources</a>
+                <a href="community.html" class="hover:text-terracotta">Community</a>
+                <a href="contact.html" class="mt-2 px-5 py-2.5 bg-terracotta text-white text-center text-sm font-medium uppercase tracking-widest">Contact Us</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Section 1: About Hero -->
+        <section class="py-24 text-center">
+            <div class="max-w-4xl mx-auto px-6 mb-16" data-aos="fade-up">
+                <span class="text-xs uppercase tracking-widest text-terracotta font-bold block mb-4">Our Story</span>
+                <h1 class="text-4xl md:text-6xl font-serif leading-tight">A Digital Home for Apparel Knowledge.</h1>
+            </div>
+            <div class="max-w-7xl mx-auto px-6 h-[600px] relative overflow-hidden" data-aos="zoom-in" data-aos-delay="200">
+                <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&q=80&w=1600" alt="Fashion Studio" class="w-full h-full object-cover">
+            </div>
+        </section>
+
+        <!-- Section 2: Our Purpose -->
+        <section class="py-24 bg-stone-100 dark:bg-graphite/20">
+            <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+                <div data-aos="fade-right">
+                    <h2 class="text-3xl md:text-3xl font-serif mb-8">Bridging Theory & Practice</h2>
+                    <p class="text-lg text-gray-600 dark:text-gray-300 mb-6">Our purpose is to bring together fashion knowledge, technical resources, learning, industry experience, and creative collaboration into one seamless platform.</p>
+                    <p class="text-lg text-gray-600 dark:text-gray-300">We believe that access to high-quality apparel education and technical documentation should be universally available to elevate the entire industry.</p>
+                </div>
+                <div class="relative h-[350px] lg:h-[400px] max-w-sm mx-auto" data-aos="fade-left">
+                    <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&q=80&w=1000" alt="Pattern Details" class="w-full h-full object-cover shadow-xl rounded">
+                    <div class="absolute -bottom-6 -left-6 bg-terracotta text-white p-8">
+                        <span class="text-3xl font-serif">10+</span>
+                        <p class="uppercase tracking-widest text-xs mt-2 font-bold">Years of Research</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Who We Support -->
+        <section class="py-24">
+            <div class="max-w-7xl mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-3xl font-serif mb-16" data-aos="fade-up">Who We Support</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Item 1 -->
+                    <div class="text-left group" data-aos="fade-up" data-aos-delay="100">
+                        <div class="h-64 mb-6 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1445205170230-053b83016050?auto=format&fit=crop&q=80&w=800" alt="Designers" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700">
+                        </div>
+                        <h3 class="text-2xl font-serif mb-2 border-b border-stone-200 dark:border-graphite pb-4">Designers</h3>
+                        <p class="text-sm text-gray-600 dark:text-gray-400 mt-4">Independent and corporate creators seeking technical precision.</p>
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="text-left group" data-aos="fade-up" data-aos-delay="200">
+                        <div class="h-64 mb-6 overflow-hidden rounded-full">
+                            <img src="https://images.unsplash.com/photo-1612423284934-2850a4ea6b0f?auto=format&fit=crop&q=80&w=800" alt="Pattern Makers" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700">
+                        </div>
+                        <h3 class="text-2xl font-serif mb-2 border-b border-stone-200 dark:border-graphite pb-4 text-center">Pattern Makers</h3>
+                        <p class="text-sm text-gray-600 dark:text-gray-400 mt-4 text-center">Architects of garments requiring accurate drafting techniques.</p>
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="text-left group" data-aos="fade-up" data-aos-delay="300">
+                        <div class="h-64 mb-6 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=800" alt="Manufacturers" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700">
+                        </div>
+                        <h3 class="text-2xl font-serif mb-2 border-b border-stone-200 dark:border-graphite pb-4 text-right">Manufacturers</h3>
+                        <p class="text-sm text-gray-600 dark:text-gray-400 mt-4 text-right">Production teams optimizing workflow and quality control.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Ecosystem -->
+        <section class="py-24 bg-charcoal text-ivory text-center">
+            <div class="max-w-7xl mx-auto px-6">
+                <h2 class="text-3xl md:text-3xl font-serif mb-16" data-aos="fade-up">The Knowledge Ecosystem</h2>
+                <div class="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-4 relative" data-aos="zoom-in">
+                    <!-- Step 1 -->
+                    <div class="z-10 bg-graphite w-32 h-32 rounded-full flex flex-col items-center justify-center border-2 border-terracotta">
+                        <span class="font-serif text-lg">Discover</span>
+                    </div>
+                    <!-- Line -->
+                    <div class="w-1 md:w-16 h-8 md:h-1 bg-terracotta animate-pulse"></div>
+                    <!-- Step 2 -->
+                    <div class="z-10 bg-graphite w-32 h-32 rounded-full flex flex-col items-center justify-center border-2 border-terracotta">
+                        <span class="font-serif text-lg">Learn</span>
+                    </div>
+                    <div class="w-1 md:w-16 h-8 md:h-1 bg-terracotta animate-pulse" style="animation-delay: 0.2s;"></div>
+                    <!-- Step 3 -->
+                    <div class="z-10 bg-graphite w-32 h-32 rounded-full flex flex-col items-center justify-center border-2 border-terracotta">
+                        <span class="font-serif text-lg">Apply</span>
+                    </div>
+                    <div class="w-1 md:w-16 h-8 md:h-1 bg-terracotta animate-pulse" style="animation-delay: 0.4s;"></div>
+                    <!-- Step 4 -->
+                    <div class="z-10 bg-graphite w-32 h-32 rounded-full flex flex-col items-center justify-center border-2 border-terracotta">
+                        <span class="font-serif text-lg">Discuss</span>
+                    </div>
+                    <div class="w-1 md:w-16 h-8 md:h-1 bg-terracotta animate-pulse" style="animation-delay: 0.6s;"></div>
+                    <!-- Step 5 -->
+                    <div class="z-10 bg-graphite w-32 h-32 rounded-full flex flex-col items-center justify-center border-2 border-terracotta">
+                        <span class="font-serif text-lg">Share</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: Impact Stats -->
+        <section class="py-24">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-12 text-center border-y border-stone-200 dark:border-graphite py-16">
+                    <div data-aos="fade-up" data-aos-delay="100">
+                        <h3 class="text-3xl font-serif text-terracotta mb-2">2.5k</h3>
+                        <p class="uppercase tracking-widest text-xs font-bold text-gray-500">Resources</p>
+                    </div>
+                    <div data-aos="fade-up" data-aos-delay="200">
+                        <h3 class="text-3xl font-serif text-terracotta mb-2">150+</h3>
+                        <p class="uppercase tracking-widest text-xs font-bold text-gray-500">Tutorials</p>
+                    </div>
+                    <div data-aos="fade-up" data-aos-delay="300">
+                        <h3 class="text-3xl font-serif text-terracotta mb-2">8.2k</h3>
+                        <p class="uppercase tracking-widest text-xs font-bold text-gray-500">Discussions</p>
+                    </div>
+                    <div data-aos="fade-up" data-aos-delay="400">
+                        <h3 class="text-3xl font-serif text-terracotta mb-2">50+</h3>
+                        <p class="uppercase tracking-widest text-xs font-bold text-gray-500">Contributors</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer (Same as Index) -->
+    <footer class="bg-charcoal text-ivory pt-20 pb-10 border-t border-graphite">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+            <div>
+                <div class="flex items-center gap-3 mb-6">
+                    <i data-lucide="scissors" class="w-6 h-6 text-terracotta"></i>
+                    <span class="font-serif text-2xl font-bold tracking-tight">Sartoria</span>
+                </div>
+                <p class="text-sm text-gray-400 leading-relaxed mb-6">A premium knowledge network for apparel professionals, bridging the gap between design theory and production reality.</p>
+                                                <div class="flex gap-4">
+                    <a href="#" class="w-10 h-10 rounded-full border border-graphite flex items-center justify-center text-gray-400 hover:text-terracotta hover:border-terracotta transition-all duration-300">
+                        <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                    </a>
+                    <a href="#" class="w-10 h-10 rounded-full border border-graphite flex items-center justify-center text-gray-400 hover:text-terracotta hover:border-terracotta transition-all duration-300">
+                        <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg>
+                    </a>
+                    <a href="#" class="w-10 h-10 rounded-full border border-graphite flex items-center justify-center text-gray-400 hover:text-terracotta hover:border-terracotta transition-all duration-300">
+                        <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                    </a>
+                    <a href="#" class="w-10 h-10 rounded-full border border-graphite flex items-center justify-center text-gray-400 hover:text-terracotta hover:border-terracotta transition-all duration-300">
+                        <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                    </a>
+                </div>
+            </div>
+            <div>
+                <h4 class="uppercase tracking-widest text-sm font-bold mb-6 text-terracotta">Platform</h4>
+                <ul class="space-y-4 text-sm text-gray-400">
+                    <li><a href="about.html" class="hover:text-white transition-colors">About Us</a></li>
+                    <li><a href="services.html" class="hover:text-white transition-colors">Services</a></li>
+                    <li><a href="resources.html" class="hover:text-white transition-colors">Resource Library</a></li>
+                    <li><a href="community.html" class="hover:text-white transition-colors">Community</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="uppercase tracking-widest text-sm font-bold mb-6 text-terracotta">Knowledge</h4>
+                <ul class="space-y-4 text-sm text-gray-400">
+                    <li><a href="#" class="hover:text-white transition-colors">Design Guides</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Technical Templates</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Video Tutorials</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Material Archive</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="uppercase tracking-widest text-sm font-bold mb-6 text-terracotta">Newsletter</h4>
+                <p class="text-sm text-gray-400 mb-4">Weekly technical insights and resources.</p>
+                <form class="flex">
+                    <input type="email" placeholder="Email Address" class="bg-graphite text-white px-4 py-2 w-full focus:outline-none focus:ring-1 focus:ring-terracotta text-sm">
+                    <button type="button" class="bg-terracotta px-4 py-2 hover:bg-white hover:text-charcoal transition-colors"><i data-lucide="arrow-right" class="w-4 h-4"></i></button>
+                </form>
+            </div>
+        </div>
+                <div class="max-w-7xl mx-auto px-6 border-t border-graphite pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500 uppercase tracking-wider relative">
+            <p>&copy; 2026 Sartoria Knowledge Network.</p>
+            <div class="flex items-center gap-6 mt-4 md:mt-0">
+                <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+                <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+                <a href="#" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;" class="ml-4 p-2 bg-graphite hover:bg-terracotta text-white transition-colors" aria-label="Back to top">
+                    <i data-lucide="arrow-up" class="w-4 h-4"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
